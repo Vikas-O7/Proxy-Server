@@ -17,7 +17,7 @@ app.get("/", (req, res) => {
 
   const raw = JSON.stringify({
     name,
-    content,
+    content: <img src={content}/>,
   });
 
   const requestOptions = {
