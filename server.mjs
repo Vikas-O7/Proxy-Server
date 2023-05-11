@@ -25,7 +25,7 @@ app.get("/", (req, res) => {
     body: raw,
     redirect: "follow",
   };
-  console.log("requestOptions", requestOptions)
+  
   fetch(
     "https://mc.adobe.io/agisinternal/target/offers/content",
     requestOptions
